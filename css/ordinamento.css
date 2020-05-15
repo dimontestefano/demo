@@ -1,0 +1,77 @@
+.button {
+  background-color: #327fa8;
+  border: none;
+  color: white;
+  padding: 7px;	
+  width: 100%;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  float: left;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
+.button:hover {
+  background-color: #1a516e;
+}
+
+#miodiv {
+	width: 100%; height: 100%; top: 0; left: 0;
+	background: url("../immagini/background.jpg") no-repeat center top; position: fixed; z-index: -1;
+	background-size: cover;
+}
+
+#risultato{
+	overflow-x: auto;
+}
+
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+
+.testo{
+	width: 35%;
+	position: absolute;
+	left:50%;
+	top:50%;
+	transform: translateX(-50%) translateY(-50%);
+}
+	
+form.input input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 80%;
+  background: #f1f1f1;
+}
+
+form.input button {
+  float: left;
+  width: 20%;
+  padding: 10px;
+  background: #2196F3;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none;
+  cursor: pointer;
+}
+
+form.input button:hover {
+  background: #0b7dda;
+}
+
+form.input::after {
+  content: "";
+  clear: both;
+  display: table;
+}

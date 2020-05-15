@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home - DIMONTE</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel = "stylesheet" type = "text/css" href = "css/index.css" />
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+</head>
+
+<body>
+    
+	<div id="miodiv"></div>
+	<div class="w3-sidebar w3-bar-block w3-card w3-animate-left" style="display:none" id="mySidebar">
+   	<button class="w3-bar-item w3-button w3-deep-purple w3-large"
+    	onclick="w3_close()">Chiudi &times;</button>
+    	<a href="html/cioccolato.html" class="w3-bar-item w3-button"><i class="fa fa-arrow-right"></i> Cioccolato</a>
+    	<a href="html/NBA.html" class="w3-bar-item w3-button"><i class="fa fa-arrow-right"></i> NBA</a>
+    	<a href="html/sistemasolare.html" class="w3-bar-item w3-button"><i class="fa fa-arrow-right"></i> Sistema Solare</a>
+	<a href="html/paridispari.html" class="w3-bar-item w3-button"><i class="fa fa-arrow-right"></i> Verifica di un Numero</a>
+	<a href="html/ordinamento.html" class="w3-bar-item w3-button"><i class="fa fa-arrow-right"></i> Ordinamento Array</a>
+    	</div>
+    	<div class="w3-deep-purple">
+    	<button id="openNav" class="w3-button w3-deep-purple w3-xlarge" onclick="w3_open()">&#9776;</button>
+	
+   	</div>
+	<div class="testo">
+	<center>
+	<img src="immagini/logo.png">
+	<h1 style="color:white; font-size:200%">HomePage Dimonte Stefano | 4CI</h1>
+	<h4 style="color:white">INSIEME DI PROGETTI REALIZZATI CON HTML5</h4>
+	</center>
+	</div>
+
+	
+	
+</body>
+
+<script>
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+}
+
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+</script>
+</html>

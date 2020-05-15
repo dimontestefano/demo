@@ -1,0 +1,52 @@
+
+h1{
+	background-color:orange;
+
+}
+
+
+button {
+	background-color: orange;
+	border: none;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	
+			
+}
+
+table{
+	width:50%;
+	font-family:Verdana;
+	text-align:center;
+	background-color:#FFFF80;
+	
+}
+
+tr.prima, tr.seconda{
+	background-color:orange;
+}
+
+th.doppio{
+	font-size:120%;
+}
+
+td{
+	background-color:#FFC000;
+}
+
+p.testo{
+	color:white;
+}
+
+#firma{
+	display:none;
+}
+
+ul.testo{
+	color:white;
+}
+

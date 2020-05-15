@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>PariDispari - DIMONTE</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel = "stylesheet" type = "text/css" href = "../css/paridispari.css" />
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+</head>
+<body>
+    
+	<div id="miodiv"></div>
+	<div class="testo">
+	<center>
+	<img src="../immagini/logo.png">
+	<h1 style="color:white; font-size:200%">Verifica di un Numero</h1>
+	
+	<form class="input" style="margin:auto;max-width:300px" onsubmit="return false;">
+  	<input type="text" placeholder="Inserisci il numero" id="num">
+  	<button type="button" id="vai" onclick="pariDispari()"><i class="fa fa-arrow-right"></i></button>
+	</form>
+	<div id="risultato" style="color:white"></div>
+	</center>
+	</div>
+	
+</body>
+
+<script>
+function pariDispari()
+{
+	var num = document.getElementById("num").value;
+	var resto = num%2;
+	var msg="";
+	if(num == "")
+		msg = "Devi inserire un numero!";
+	else{
+		if(isInt(num))
+		{
+			if(resto == 0)
+				msg = "Il numero è Pari!";
+			else if(resto!=0)
+				msg = "Il numero è Dispari!";
+		}else{
+			msg = "Puoi inserire solo numeri!";
+		}
+	}
+	document.getElementById("risultato").innerHTML = msg;
+}
+
+function isInt(value) {
+  var x = parseFloat(value);
+  return !isNaN(value) && (x | 0) === x;
+}
+
+num.addEventListener("keyup", function(event) {
+  if (event.keyCode === 13) {
+   event.preventDefault();
+   document.getElementById("vai").click();
+  }
+});
+</script>
+</html>

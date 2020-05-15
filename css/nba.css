@@ -1,0 +1,46 @@
+h1{
+	background-color:#0066CC;
+	color:white;
+	font-size:120%;
+}
+
+button {
+	background-color: #0099CC;
+	border: none;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	
+			
+}
+
+h2{
+	background-color:#0099CC;
+}
+
+table{
+	width:25%;
+	font-family:Verdana;
+	background-color:#F0F0F0;
+}
+
+tr{
+	background-color:light gray;
+}
+
+tr.prima{
+	background-color:#0066CC;
+	color:white;
+	font-size:120;
+}
+
+tr.seconda{
+	background-color:#0099CC;
+}
+
+#firma{
+	display:none;
+}

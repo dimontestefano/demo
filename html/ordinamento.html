@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>PariDispari - DIMONTE</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel = "stylesheet" type = "text/css" href = "../css/ordinamento.css" />
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+</head>
+<body>
+    
+	<div id="miodiv"></div>
+	<div class="testo">
+		<center>
+			<img src="../immagini/logo.png">
+			<h1 style="color:white; font-size:200%">Caricamento e Ordinamento Array</h1>
+			<div class="w3-container" onsubmit="return false;">
+			  	<div><input type="text" class="w3-input" placeholder="Inserisci la dimensione" id="num"></div>
+				<div class="grid-container">
+					<button class="button" onclick="carica();">Carica</button>
+					<button class="button" onclick="ordina();">Ordina</button>
+					<button class="button" onclick="stampa();">Stampa</button>
+				</div>
+			</div>
+			</br>
+			<div class = "w3-container ">
+				<div id = "risultato" class = "w3-border" style = "padding:15px; color:white; resizable:none;">L'array verrà mostrato qui.</div>
+			</div>
+
+		</center>
+	</div>
+	
+</body>
+
+<script>
+var arr = new Array();
+
+function carica()
+{
+	arr = [];
+	var n = parseInt(document.getElementById('num').value);
+	if(isInt(n))
+	{
+		for(var i=0; i<n; i++)
+			arr[i] = Math.floor(Math.random() * 100);
+		alert("Array caricato.");
+	}else{
+		alert("Devi inserire un numero intero!");
+	}
+}
+
+
+function ordina()
+{
+	if(arr.length > 0)
+	{
+		arr.sort(function(a, b){return a - b});
+		alert("Array Ordinato.");
+	}else{
+		alert("L'array è vuoto!");	
+	}
+
+}
+
+function stampa()
+{
+	if(arr.length > 0)
+	{
+		document.getElementById("risultato").innerHTML = arr;
+	}else{
+		alert("L'array è vuoto");	
+	}
+}
+
+
+function isInt(value) {
+  var x = parseFloat(value);
+  return !isNaN(value) && (x | 0) === x;
+}
+</script>
+</html>
